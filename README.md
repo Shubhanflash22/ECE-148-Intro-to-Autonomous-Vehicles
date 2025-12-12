@@ -67,14 +67,7 @@ The goal of the "Autonomous Roadside Mechanic" is to identify and navigate a bro
   * Car stops when the LiDAR calculates a certain distance from  the broken down car
 
 ## Demonstration
-<div align="center">
-  <video width="851" height="386" controls>
-    <source src="[https://drive.google.com/uc?export=download&id=FILE_ID](https://drive.google.com/uc?export=download&id=1xhgiBXax5SXXwBOTj1fMKmmCeu441SC9
-)" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
+[👉 Watch the Demo Video](https://drive.google.com/uc?export=download&id=1xhgiBXax5SXXwBOTj1fMKmmCeu441SC9)
 
 ## Challenges
 * tbd 
