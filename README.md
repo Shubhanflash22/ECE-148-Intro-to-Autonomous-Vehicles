@@ -74,12 +74,12 @@ tbd
  
 ## Robot Design
 <div align="center">
-<img src="images\car-cad.png?" width="851" height="386">
+<img src="media\car-cad.png?" width="851" height="386">
 </div>
 
 ## Electrical Diagram
 <div align="center">
-<img src="images\Electrical_wiring.png?" width="581" height="365">
+<img src="media\Electrical_wiring.png?" width="581" height="365">
 </div>
  
 ## References
