@@ -68,7 +68,10 @@ The goal of the "Autonomous Roadside Mechanic" is to identify and navigate a bro
 
 ## Demonstration
 <div align="center">
-<img src="media\Demo_Video.mp4?" width="851" height="386">
+  <video width="851" height="386" controls>
+    <source src="media/Demo_Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </div>
 
 ## Challenges
