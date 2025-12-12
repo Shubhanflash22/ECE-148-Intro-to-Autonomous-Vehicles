@@ -9,7 +9,7 @@
 ## 
 
 <h3>Team 7 </h3>
-<h3>ECE/MAE 148 Final Project FA25</h3>
+<h3>ECE 148 Final Project FA25</h3>
 <p>
 </p>
 <img src="media\car.jpg?" width="605" height="501">
@@ -31,10 +31,10 @@
 ## Team Members
 
 <ul>
+  <li>Shubhan Mital - MS Electrical and Computer Engineering (MLDS)</li>
   <li>Alison Stosser - Mechanical Engineering</li>
   <li>Long-Giang Vu - MS Computer Science and Engineering</li>
   <li>Qiwen Xu - Electrical Computer Engineering</li>
-  <li>Shubhan Mital - MS Electrical and Computer Engineering (MLDS)</li>
 </ul>
 
 ## Overview
