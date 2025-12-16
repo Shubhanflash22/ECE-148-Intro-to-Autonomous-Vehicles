@@ -102,7 +102,7 @@ The goal of the "Autonomous Roadside Mechanic" is to identify and navigate a bro
 
 ## Electrical Diagram
 <div align="center">
-<img src="media\Electrical_Wiring.png?" width="581" height="500">
+<img src="media\Electrical_wiring.png?" width="581" height="500">
 </div>
  
 ## References
