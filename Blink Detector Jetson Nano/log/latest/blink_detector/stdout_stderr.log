@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing blink_detector.egg-info/PKG-INFO
+writing dependency_links to blink_detector.egg-info/dependency_links.txt
+writing entry points to blink_detector.egg-info/entry_points.txt
+writing requirements to blink_detector.egg-info/requires.txt
+writing top-level names to blink_detector.egg-info/top_level.txt
+reading manifest file 'blink_detector.egg-info/SOURCES.txt'
+writing manifest file 'blink_detector.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/projects/blink_ws/install/blink_detector/lib/python3.8/site-packages/blink-detector.egg-link (link to .)
+Installing blink_detector script to /home/projects/blink_ws/install/blink_detector/lib/blink_detector
+Installing car_control_example script to /home/projects/blink_ws/install/blink_detector/lib/blink_detector
+
+Installed /home/projects/blink_ws/build/blink_detector
+running install_data

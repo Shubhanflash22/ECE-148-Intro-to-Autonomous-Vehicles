@@ -1,0 +1,4 @@
+[console_scripts]
+blink_detector = blink_detector.blink_detector:main
+car_control_example = blink_detector.car_control_example:main
+

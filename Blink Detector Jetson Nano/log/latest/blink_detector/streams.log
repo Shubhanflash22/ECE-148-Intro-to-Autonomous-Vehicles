@@ -1,0 +1,18 @@
+[3.512s] Invoking command in '/home/projects/blink_ws/build/blink_detector': PYTHONPATH=/home/projects/blink_ws/install/blink_detector/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/projects/blink_ws/install/blink_detector --editable --build-directory /home/projects/blink_ws/build/blink_detector/build --no-deps install_data --install-dir /home/projects/blink_ws/install/blink_detector
+[4.787s] running develop
+[5.690s] running egg_info
+[5.691s] writing blink_detector.egg-info/PKG-INFO
+[5.694s] writing dependency_links to blink_detector.egg-info/dependency_links.txt
+[5.695s] writing entry points to blink_detector.egg-info/entry_points.txt
+[5.695s] writing requirements to blink_detector.egg-info/requires.txt
+[5.696s] writing top-level names to blink_detector.egg-info/top_level.txt
+[5.861s] reading manifest file 'blink_detector.egg-info/SOURCES.txt'
+[5.869s] writing manifest file 'blink_detector.egg-info/SOURCES.txt'
+[6.055s] running build_ext
+[6.061s] Creating /home/projects/blink_ws/install/blink_detector/lib/python3.8/site-packages/blink-detector.egg-link (link to .)
+[6.065s] Installing blink_detector script to /home/projects/blink_ws/install/blink_detector/lib/blink_detector
+[6.066s] Installing car_control_example script to /home/projects/blink_ws/install/blink_detector/lib/blink_detector
+[6.067s] 
+[6.067s] Installed /home/projects/blink_ws/build/blink_detector
+[6.068s] running install_data
+[6.214s] Invoked command in '/home/projects/blink_ws/build/blink_detector' returned '0': PYTHONPATH=/home/projects/blink_ws/install/blink_detector/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/projects/blink_ws/install/blink_detector --editable --build-directory /home/projects/blink_ws/build/blink_detector/build --no-deps install_data --install-dir /home/projects/blink_ws/install/blink_detector
