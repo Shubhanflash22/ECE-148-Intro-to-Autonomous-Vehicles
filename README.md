@@ -9,7 +9,7 @@
 ## 
 
 <h3>Team 7 </h3>
-<h3>ECE 148 Final Project FA25</h3>
+<h3>ECE/MAE 148 Final Project FA25</h3>
 <p>
 </p>
 <img src="media\car.jpg?" width="605" height="501">
@@ -26,6 +26,7 @@
     <li><a href="#robot-design">Robot Design</a></li>
     <li><a href="#electrical-diagram">Electrical Diagram</a></li>
     <li><a href="#references">References</a></li>
+    <li><a href="#Acknowledgments">Acknowledgments</a></li>
   </ol>
   
 ## Team Members
@@ -67,20 +68,51 @@ The goal of the "Autonomous Roadside Mechanic" is to identify and navigate a bro
   * Car stops when the LiDAR calculates a certain distance from  the broken down car
 
 ## Demonstration
-[👉 Watch the Demo Video](https://drive.google.com/uc?export=download&id=1xhgiBXax5SXXwBOTj1fMKmmCeu441SC9)
+<div align="center">
+<img src="media/demo.gif" alt="Demo GIF" />
+</div>
+
+[Watch Full Demo Video](media/Demo_Video.mp4)
 
 ## Challenges
-* tbd 
+* Field of view for the Intel RealSense Camera was not as wide as necessary for a proper "bird's eye view"
+  * The solution was to lower our placement of the camera closer to the blinking hazard light, but given more time we would replace it with a wide angle camera
+* The PD control as the robot got closer to the broken down car was not as accurate due to the angle of correction needed being much greater at the shorter distances
+  * We solved this by exponentially scaling the error angle between the car and the robot which increased the angle of correction needed when the robot was father away thereby reducing the angle of correction necessary when the robot was closer
+* The blink detection algorithm was too sensitive and would trigger on any red light, not just hazard lights on stopped vehicles.
+  * To address this, we converted the bird’s eye camera image to HSV color space to isolate red pixels, applied region-of-interest filtering to focus on potential hazard lights, analyzed temporal brightness changes across frames, and confirmed the blink frequency using a fast Fourier transform (FFT). Only when all three conditions were met did the system send the release signal to the mechanic vehicle, significantly reducing false positives while reliably detecting stopped vehicles with blinking hazard lights.
+* Our Nice-To-Have goal is to integrate the existing lane detection system (from https://gitlab.com/ucsd_robocar2/ucsd_robocar_lane_detection2_pkg) with the mechanic system to enable lane following. Ideally, lane following is activated when the bird’s-eye camera detects a blinking light and remains active until a car is detected. Although the code integration is complete, we encountered an issue where the camera cannot simultaneously run both the Roboflow detection pipeline and the lane detection pipeline. The most likely cause is that the Roboflow detection node creates its own camera pipeline, while the lane detection node also attempts to subscribe directly to the camera, leading to conflicts between the two nodes.
+    * Possible solution: Introduce a dedicated camera node that publishes raw RGB image data. Both the lane detection node and the car detection (Roboflow) node will then subscribe to this shared image topic, allowing them to process the same camera data independently without pipeline conflicts.
  
 ## Robot Design
 <div align="center">
-<img src="media\car-cad.png?" width="851" height="386">
+<img src="media\car_cad.png?" width="525" height="791">
 </div>
+
+### Hardware Components list
+  * Traxxas Chassis with steering servo and sensored brushless DC motor
+  * Jetson Nano
+  * Inter RealSense D435i
+  * Raspberry pi
+  * OAK-D camera
+  * Lidar LD06
+  * 12V Battery
+  * DC-DC Converter (12V to 5V)
+  * VESC
 
 ## Electrical Diagram
 <div align="center">
-<img src="media\Electrical_wiring.png?" width="581" height="365">
+<img src="media\Electrical_Wiring.png?" width="581" height="500">
 </div>
  
 ## References
 * [Roboflow Car Detection Model](https://universe.roboflow.com/ece-148/car-object-detection-vw2le-5heye)
+
+## Acknowledgments
+Documentation inspired by/directly referenced from Team 5 - Fall 2024
+
+Thank you to Professor Jack Silberman and our incredible TA's Winston and Aryan for an amazing Fall 2025 class!
+
+<div align="center">
+<img src="media\team_photo.jpg?" width="582" height="436">
+</div>
