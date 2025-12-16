@@ -9,7 +9,7 @@
 ## 
 
 <h3>Team 7 </h3>
-<h3>ECE/MAE 148 Final Project FA25</h3>
+<h3>ECE 148 Final Project FA25</h3>
 <p>
 </p>
 <img src="media\car.jpg?" width="605" height="501">
