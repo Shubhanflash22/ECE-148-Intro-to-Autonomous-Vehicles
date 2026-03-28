@@ -1,5 +1,5 @@
 <div id="top"></div>
-<h1 align="center">Small Autonomous Roadside Mechanic</h1>
+<h1 align="center">Autonomous Roadside Mechanic</h1>
 <br />
 <div align="center">
   <a href="https://jacobsschool.ucsd.edu/">
